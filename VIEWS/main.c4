@@ -1,0 +1,25 @@
+
+views {
+	
+	// MAIN VIEW often referred to as INDEX - Context View
+	view pg of pg {
+    	title 'System Landscape'
+    	include *,
+      	//element.kind = system
+
+		global style zlegend
+  	}
+
+	
+
+	view tech of pg.tech {
+		title "Technology"
+		include pg.tech, pg.tech.*
+
+		include pg.tech with {
+			navigateTo pg
+		}
+
+		global style zlegend
+	}
+}

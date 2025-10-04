@@ -1,0 +1,40 @@
+model {
+    extend pg.applications.sap {
+        
+        po = application "SAP PO" {
+            #applications
+            title "SAP PO"
+            description "SAP Process Orchestration"
+            technology "SAP PO"
+        }
+        
+        pi = application "SAP PI" {
+            #applications
+            title "SAP PI"
+            description "SAP Process Integration"
+            technology "SAP PO"
+        }
+
+        ecc = application "SAP ECC" {
+            #applications
+            title "SAP ECC"
+            description "SAP ECC"
+            technology "SAP ECC"
+        }
+
+        bw = application "SAP BW" {
+            #applications
+            title "SAP BW"
+            description "SAP BW"
+            technology "SAP BW"
+        }
+
+        ibp = application "SAP IBP" {
+            #applications
+            title "SAP Integrated Business Planning"
+            description "SAP Integrated Business Planning"
+            technology "SAP PO"
+        }
+    }
+
+}

@@ -1,0 +1,22 @@
+views {
+view info of pg.info {
+		title "Information"
+		include pg.info, pg.info.*
+        exclude element.kind = database 
+		include pg.info with {
+			navigateTo pg
+		}
+		global style zlegend
+	}
+
+    view sapecc of pg.info.sapeccInfo {
+        title "SAP ECC Info"
+        include pg.info.sapeccInfo, pg.info.sapeccInfo.*
+    
+        include pg.info.sapeccInfo with {
+			navigateTo info
+		}
+        global style zlegend
+    }
+
+}

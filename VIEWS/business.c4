@@ -1,0 +1,12 @@
+views {
+view business of pg.biz {
+		title "Business"
+		include pg.biz, pg.biz.*
+
+		include pg.biz with {
+			navigateTo pg
+		}
+		global style zlegend
+	}
+
+}

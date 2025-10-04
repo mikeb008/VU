@@ -1,0 +1,23 @@
+global {
+	styleGroup zlegend {
+
+		style element.tag = #applications {
+			notation "Applications"
+			color Green
+			//size large
+  			//textSize large
+		}
+        style element.tag = #technologies {
+			notation "Technology"
+			color Orange
+		}
+        style element.tag = #business {
+			notation "Business"
+			color Purple
+		}
+        style element.tag = #information {
+			notation "Information"
+			color Blue
+		}
+    }
+}

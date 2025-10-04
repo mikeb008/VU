@@ -1,0 +1,55 @@
+model {
+    extend pg.info {
+        
+        sapeccInfo = container  "SAP S4/HANA Info"{
+            #information
+            style {
+                opacity 40%
+            }
+
+            group = database "Group" {
+				#information
+				title "Group"
+				description "Group"
+			}
+
+            bu = database "Bussiness Unit / Division" {
+				#information
+				title "Bussiness Unit / Division"
+				description "Bussiness Unit / Division"
+			}
+
+            product = database "Product / Material" {
+				#information
+				title "Product / Material"
+				description "Product / Material"
+			}
+            pricing = database "Pricing" {
+				#information
+				title "Pricing"
+				description "Pricing"
+			}
+            customer = database "Customer" {
+				#information
+				title "Customer"
+				description "Customer"
+			}
+            vendor = database "Vendor" {
+				#information
+				title "Vendor"
+				description "Vendor"
+			}
+        }
+        
+        saps4Info = container "SAP ECC Info" {
+            #information
+            title "SAP ECC Info"
+            description "SAP ECC Info"
+        }
+
+        d365Info = container "D365 Info" {
+            #information
+            title "D365 Info"
+            description "D365 Info"
+    }
+}

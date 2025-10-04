@@ -1,0 +1,23 @@
+views {
+
+    view applications of pg.applications {
+		title "Applications"
+		include pg.applications, pg.applications.*
+
+		include pg.applications with {
+			navigateTo pg
+		}
+		global style zlegend
+	}
+
+	view sap of pg.applications.sap {
+		title "SAP"
+		include pg.applications.sap, pg.applications.sap.*
+
+		include pg.applications.sap with {
+			navigateTo applications
+		}
+
+		global style zlegend
+	}
+}

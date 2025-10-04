@@ -1,0 +1,166 @@
+model {
+	
+	// ---- Define system ACTORS ----
+	admin = actor "Administrator" {
+		description 'Manages & supports the ET system'
+	}
+
+	customer = actor "Customer" {
+		description "Main system user"
+	}
+
+
+	// ---- Define System Context ----
+	pg = system "PG Group" {
+		title 'PG Group'
+		description 'PG Group Architecture Roadmap'
+		style {
+			opacity 40%
+		}
+
+		// APPLICATIONS
+		applications = container "Applications" {
+			#applications
+			title "Applications"
+			description "PG Group Applications"
+			style {
+				color Green
+				opacity 30%
+			}
+
+			// Define COMPONENTS
+			sap = system "SAP" {
+				#applications
+				title "SAP"
+      			technology "SAP S4/HANA"
+      			description "SAP S4/HANA"
+				icon https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.Li4AUmlrrZzbUIEvMsPowAHaHa%3Fpid%3DApi&f=1&ipt=fc9a1d4d0c49c71b5abb36082f71676a065981ea33c0cc2fc55077d9179c2a5c&ipo=images
+				style {
+					opacity 30%
+				}
+
+			}
+
+    		sap-ecc = system "SAP ECC" {
+				#applications
+      			title "SAP ECC"
+				technology "SAP"
+      			description "SAP ECC"
+      			link https://flutter.dev/
+      			icon https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.T3QtnPxuD6bkd4LAc5ljyQAAAA%3Fpid%3DApi&f=1&ipt=a2f28d8a07cfa156c9459068fec25c24b54ea98883a529d1560d40e591cc2d1f&ipo=images
+      
+      			style {
+					opacity 30%
+				}
+    		}
+
+			d365 = system "MS D365" { 
+				#applications
+				title "D365"
+				icon https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.iItG3Uk_k-30zyYNc-XASQHaHa%3Fpid%3DApi&f=1&ipt=3180122a9811f028a91a324f1705b869c2305f77b91ce66a110c7209957129c4&ipo=images
+				style {
+					opacity 30%
+				}
+			}
+			
+		}
+
+		// TECHNOLOGY
+		tech = container "Technology" {
+			style {
+				color Orange
+				opacity 40%
+			}
+			// Define COMPONENTS
+			cloud = component "Cloud" {
+				#technologies
+				description "Cloud System"
+				icon https://images.icon-icons.com/122/PNG/512/cloud_app_socialnetwork_19987.png
+			}
+
+  			onprem = component "On Premise" {
+				#technologies
+  				description "On -Premise Systems"
+				icon https://images.icon-icons.com/3016/PNG/512/building_vector_real_estate_residence_building_icon_188565.png
+  			}
+		}
+
+		// BUSINESS
+		biz = container "Business" {
+			title "Business"
+			description "PG Group Business"
+			style {
+				color Purple
+				opacity 40%
+			}
+
+			// Define COMPONENTS
+			pgGlass = component "PG Glass" {
+				#business
+				description "PG Glass"
+			}
+
+  			arg = component "ARG" {
+				#business
+  				description "ARG"
+  			}
+
+  			pfg = component "PFG" {
+				#business
+  				description "PFG"
+  			}
+
+  			shatterPrufe = component "Shatter Prufe" {
+  				#business
+				description "Shatter Prufe"
+  			}
+
+  			widney = component "Widney" {
+  				#business
+				description "Widney"
+  			}
+
+  			pgBuilding = component "PG Buildingh Glass" {
+  				#business
+				description "PG Building Glass"
+  			}
+
+  			pgAfrica = component "PG Africa" {
+  				#business
+				description "PG Africa"
+  			}
+
+  			hr = component "HR" {
+  				#business
+				description "HR"
+  			}
+		
+		}
+		
+		// INFORMATION 
+		info = container "Information" {
+			style {
+				color Blue
+				opacity 40%
+			}
+
+			saps4-info = database "SAP S4/HANA Info" {
+				#information
+				title "SAP S4/HANA Info"
+				description "SAP S4/HANA Info"
+			}
+			sapecc-info = database "SAP ECC Info" {
+				#information
+				title "SAP ECC Info"
+				description "SAP ECC Info"
+			}
+			d365-info = database "D365 Info" {
+				#information
+				title "D365 Info"
+				description "D365 Info"
+			}
+		}
+  			
+	}
+
+}

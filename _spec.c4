@@ -1,0 +1,48 @@
+specification {
+	
+	// Define element for Actors
+	element actor {
+		style {
+			shape person
+			color secondary
+		}
+	}
+
+	element system 
+
+	element container 
+
+	element component
+
+	element application
+
+	element webapp {
+		style {
+			shape browser
+			//color ...
+			//icon <link to icon>
+		}
+	}
+
+	element mobile {
+		style {
+			shape mobile
+		} 
+	}
+
+	element database {
+		style {
+			shape storage
+		} 
+	}
+
+	tag applications
+	tag technologies
+	tag business
+	tag information
+	
+	color Green #16a34a
+	color Blue #1F77B4 
+	color Orange #FFF8DC
+	color Purple #9467BD
+}
