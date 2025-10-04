@@ -9,7 +9,6 @@ model {
 		description "Main system user"
 	}
 
-
 	// ---- Define System Context ----
 	pg = system "PG Group" {
 		title 'PG Group'
